@@ -1,0 +1,112 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+canvas {
+  display: block;
+}
+
+.uploadControl {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 100px; /* Need a specific value to work */
+  background-color: white;
+  top: 50%;
+}
+
+.uploadControl {
+  border-radius: 12px;
+  border: none;
+  padding: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+  font-family: 'Courier New';
+}
+
+.uploadControl:hover {
+  background-color: chartreuse;
+}
+
+.uploadControl:active {
+  background-color: rgb(96, 189, 2);
+}
+
+.colourControl {
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-top: -65px;
+}
+
+.colourControlInputs {
+  display: inline-block;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  width: 100px;
+  display: flex;
+}
+
+.colourControl input {
+  width:38px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 15px;
+  margin-right: 15px;
+} 
+
+#startIrisgramButton {
+  background-color: white;
+  border: none;
+  padding: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+#startIrisgramButton:hover {
+  background-color: chartreuse;
+}
+
+#startIrisgramButton:active {
+  background-color: rgb(96, 189, 2);
+}
+
+.irisgramControl {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+}
+
+.irisgramControl div {
+  position: relative;
+  display: inline-block;
+}
+
+.irisgramControl .rightAlignedButtons {
+  float: right;
+}
+
+.irisgramControl button {
+  border: none;
+  fill: none;
+  background-color: transparent;
+  font-family: 'Courier New';
+  font-size: 18px;
+  padding: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
+  color: white;
+}
+.irisgramControl button:hover {
+  font-weight: 600;
+}
+
+#mp3-input {
+ display: none;
+}

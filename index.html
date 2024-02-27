@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Irisgram</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <div class="irisgramControl" id="irisgramControl" hidden>
+    <div class="leftAlignedButtons">
+      <button onclick="resetIrisgram()"> back </button>
+    </div>
+    <div class="rightAlignedButtons">
+      <button onclick="toggleSound()" id="audioButton"> pause </button>
+      <button onclick="saveIrisgram()"> save </button>
+    </div>
+  </div>
+  <div class="uploadControl" id="uploadControl">
+    <label for="files" class="btn" onclick="clickUploadButton()"> Upload MP3</label>
+  </div>
+  <div class="colourControl" id="colourControl" hidden>
+    <div class="colourControlInputs">
+      <div class="colourInput">
+        <p>r:</p><input id="rSlider" min="0" max="255"></input>
+      </div>
+      <div class="colourInput">
+        <p>g:</p><input id="gSlider" min="0" max="255"></input>
+      </div>
+      <div class="colourInput">
+        <p>b:</p><input id="bSlider" min="0" max="255"></input>
+      </div>
+    </div>
+    <div class="colourControlButton">
+      <button id="startIrisgramButton" onclick="startIrisgram()"> start </button>
+    </div>
+  </div>
+  <!-- <div class="startButton"> -->
+  <!-- </div> -->
+  <input id="mp3-input" type="file">
+  <script src="upload.js"></script>
+</body>
+
+</html>
